@@ -1,0 +1,13 @@
+name: deploy
+
+on: push
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    -
+      name: greetings
+      uses: actions/hello-world-docker-action@master
+      with:
+        who-to-greet: David
